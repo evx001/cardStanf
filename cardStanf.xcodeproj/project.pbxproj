@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600B38BC194815F9000B4BC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 600B38BE194815F9000B4BC5 /* Main.storyboard */; };
+		600B38C2194816CF000B4BC5 /* EVXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600B38C0194816CF000B4BC5 /* EVXViewController.m */; };
+		600B38C3194816CF000B4BC5 /* EVXViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 600B38C1194816CF000B4BC5 /* EVXViewController.xib */; };
 		600BC551192FF4CA00345087 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 600BC550192FF4CA00345087 /* PlayingCardDeck.m */; };
 		60C76887192619FA0009D1C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C76886192619FA0009D1C5 /* Foundation.framework */; };
 		60C76889192619FA0009D1C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C76888192619FA0009D1C5 /* CoreGraphics.framework */; };
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		600B38BD194815F9000B4BC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		600B38BF194816CF000B4BC5 /* EVXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVXViewController.h; sourceTree = "<group>"; };
+		600B38C0194816CF000B4BC5 /* EVXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVXViewController.m; sourceTree = "<group>"; };
+		600B38C1194816CF000B4BC5 /* EVXViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVXViewController.xib; sourceTree = "<group>"; };
 		600BC54F192FF4CA00345087 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		600BC550192FF4CA00345087 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 		60C76883192619FA0009D1C5 /* cardStanf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardStanf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +126,10 @@
 		60C7688C192619FA0009D1C5 /* cardStanf */ = {
 			isa = PBXGroup;
 			children = (
+				600B38BF194816CF000B4BC5 /* EVXViewController.h */,
+				600B38C0194816CF000B4BC5 /* EVXViewController.m */,
+				600B38C1194816CF000B4BC5 /* EVXViewController.xib */,
+				600B38BE194815F9000B4BC5 /* Main.storyboard */,
 				60C768B519261C330009D1C5 /* Card.h */,
 				60C768B719261C620009D1C5 /* Card.m */,
 				60F296B019280D50008CF748 /* PlayingCard.h */,
@@ -243,6 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600B38C3194816CF000B4BC5 /* EVXViewController.xib in Resources */,
+				600B38BC194815F9000B4BC5 /* Main.storyboard in Resources */,
 				60C76891192619FA0009D1C5 /* InfoPlist.strings in Resources */,
 				60C76899192619FA0009D1C5 /* Images.xcassets in Resources */,
 			);
@@ -268,6 +281,7 @@
 				60C768B819261C620009D1C5 /* Card.m in Sources */,
 				60CA11941926AC4800B06135 /* Deck.m in Sources */,
 				60F296B219280D97008CF748 /* PlayingCard.m in Sources */,
+				600B38C2194816CF000B4BC5 /* EVXViewController.m in Sources */,
 				60C76893192619FA0009D1C5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +305,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		600B38BE194815F9000B4BC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				600B38BD194815F9000B4BC5 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		60C7688F192619FA0009D1C5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -390,6 +412,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cardStanf/cardStanf-Prefix.pch";
 				INFOPLIST_FILE = "cardStanf/cardStanf-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -406,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cardStanf/cardStanf-Prefix.pch";
 				INFOPLIST_FILE = "cardStanf/cardStanf-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
